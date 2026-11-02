@@ -1,4 +1,4 @@
-const CACHE = 'pasar-at-farm-2-keuangan-v2-02';
+const CACHE = 'at-kp-install-baru-2026-v1';
 const ASSETS = ['./', './index.html', './config.js', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
@@ -6,7 +6,7 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
-    await Promise.all(keys.filter(k => k.startsWith('pasar-at-farm-2-keuangan-') && k !== CACHE).map(k => caches.delete(k)));
+    await Promise.all(keys.filter(k => k.startsWith('at-kp-install-baru-2026-') && k !== CACHE).map(k => caches.delete(k)));
     await self.clients.claim();
   })());
 });
