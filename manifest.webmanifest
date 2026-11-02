@@ -1,9 +1,9 @@
 {
-  "id": "./?app=at-kp-install-baru-2026",
+  "id": "./?app=at-kp-install-baru-20261102",
   "name": "AT KP",
   "short_name": "AT KP",
   "description": "Aplikasi khusus keuangan dan penjualan PASAR AT FARM 2",
-  "start_url": "./?app=at-kp-install-baru-2026",
+  "start_url": "./?app=at-kp-install-baru-20261102",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f4f7fc",
